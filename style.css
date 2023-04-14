@@ -1,0 +1,30 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px auto auto auto;
+    font-family: "impact";
+}
+
+header{
+    color: red;
+    font-size: large;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 90vw 1fr;
+}
+img{
+    height: 100%;
+    width: 50px;
+}
+
+
+/*Dropdownmeny*/
+nav > ul{
+    background-color: gray;
+    display: none;
+}
+nav:hover, nav > ul{
+    display: block;
+    cursor: pointer;
+}
