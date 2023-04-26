@@ -3,6 +3,7 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: 80px auto auto auto;
     font-family: "impact";
+    margin: 0;
 }
 
 header{
@@ -11,20 +12,47 @@ header{
 
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 90vw 1fr;
-}
-img{
-    height: 100%;
-    width: 50px;
+    grid-template-columns: 80vw 1fr;
+    margin: 0;
+    border-bottom: 2px solid black;
 }
 
 
 /*Dropdownmeny*/
-nav > ul{
-    background-color: gray;
+nav ul{           /*Dropdown content*/
+    background-color: rgb(182, 182, 182);
     display: none;
+    position: absolute;
+    margin: 0;
+    margin-top: -4px;
+
 }
-nav:hover, nav > ul{
+nav:hover ul{
     display: block;
     cursor: pointer;
+    z-index: 1;
+}
+
+
+
+/*Menystyling*/
+nav img{
+    height: 100%;
+    width: 50px;
+}
+nav{
+    background-color: blue;
+    overflow: hidden;
+    margin: 0;
+}
+nav li{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+h1{
+    margin: 0;
+    margin-top: 25px;
+}
+li:hover{
+    background-color: gray;
 }
