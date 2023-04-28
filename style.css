@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px auto auto auto;
+    grid-template-rows: 80px auto 20vh;
     font-family: "impact";
     margin: 0;
 }
@@ -12,10 +12,21 @@ header{
 
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 80vw 1fr;
+    grid-template-columns: 90vw 1fr;
     margin: 0;
     border-bottom: 2px solid black;
 }
+
+/*Wrappers*/
+.tvåspalt{ /*gör så att jag kan göra en sida tvåspalt*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    margin: 10px;
+}
+
+
+
 
 
 /*Dropdownmeny*/
@@ -24,7 +35,7 @@ nav ul{           /*Dropdown content*/
     display: none;
     position: absolute;
     margin: 0;
-    margin-top: -4px;
+    margin-top: 0;
 
 }
 nav:hover ul{
@@ -41,13 +52,24 @@ nav img{
     width: 50px;
 }
 nav{
-    background-color: blue;
     overflow: hidden;
     margin: 0;
+    font-size: 20px;
+}
+nav ul{
+    list-style-type: none;
+    padding-left: 0;    
+    right: 0;
+
+}
+nav a{
+    text-decoration: none;
 }
 nav li{
     padding-top: 7px;
     padding-bottom: 7px;
+    padding-left: 8px;
+    padding-right: 25px;
 }
 h1{
     margin: 0;
@@ -55,4 +77,47 @@ h1{
 }
 li:hover{
     background-color: gray;
+}
+
+
+/*Footerstyling*/
+footer{
+    background-color: darkslategray;
+}
+
+
+/*indexstyling*/
+main.tvåspalt img{
+    max-width: 60vw;
+
+}
+main.tvåspalt > section:nth-child(2), main.tvåspalt > section:nth-child(3){
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+
+
+
+
+
+@media screen and (min-width:800px){
+
+    /*Wrappers*/
+    .tvåspalt{ /*gör så att jag kan göra en sida tvåspalt*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    /*indexstyling*/
+    main.tvåspalt img{
+        max-width: 30vw;
+
+    }
+    main.tvåspalt > section:nth-child(2), main.tvåspalt > section:nth-child(3){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0;
+
+    }
 }
