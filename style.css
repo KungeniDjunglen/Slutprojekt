@@ -130,6 +130,12 @@ table{
 }
 
 
+/*Ikon styling*/
+.ikon{ /*Finns på: eddie.html brian.html haftor.html .  Finns för att jag ska kunna styla de unikt*/
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 10px;
+}
 
 
 
@@ -170,6 +176,17 @@ table{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0;
         margin: 5px
+    }
+
+
+        /*Ikon styling*/
+    .ikon{ /*Finns på: eddie.html brian.html haftor.html .  Finns för att jag ska kunna styla de unikt*/
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 10px;
+    }
+    main.ikon > section:nth-child(1){
+        margin-right: 10vw;
     }
 
 }
