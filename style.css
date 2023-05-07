@@ -18,7 +18,7 @@ header{
 }
 
 
-/*Wrappers*/
+/*index Wrappers*/
 .tvåspalt{ /*gör så att jag kan göra en sida tvåspalt. Används i: index, */
     display: grid;
     grid-template-columns: 1fr;
