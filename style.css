@@ -138,6 +138,27 @@ table{
 }
 
 
+/*Formstyling*/
+form{
+    display: grid;
+    grid-template-columns: auto auto;
+
+    background-color: rgb(167, 167, 167);
+    margin: 10px;
+    border: 2px solid black;
+    padding-left: 5vw;
+}
+form label, form input{
+    margin-top: 5px;
+}
+
+
+/*Om oss*/
+main > p{
+    text-align: center;
+}
+
+
 
 @media screen and (min-width:800px){
 
@@ -187,6 +208,13 @@ table{
     }
     main.ikon > section:nth-child(1){
         margin-right: 10vw;
+    }
+
+
+    /*formstyling*/
+    form{
+        margin-left: 20vw;
+        margin-right: 20vw;
     }
 
 }

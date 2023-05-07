@@ -1,6 +1,6 @@
 <!DOCTYPE html> 
 
-<html>
+<html lang="sv">
     <head>
         <title>Lägg till</title>
         <link rel="stylesheet" href="style.css">
@@ -20,7 +20,31 @@
                 </ul>
             </nav>
         </header>
-        <main class="ikon">
+        <main>
+            <form action="#">
+                <label for="Name">Namn: </label>
+                <input type="text" name="Name" id="Name">
+
+                <label for="Lastname">Efternamn: </label>
+                <input type="text" name="Lastname" id="Lastname">
+
+                <label for="Age">Ålder: </label>
+                <input type="number" name="Age" id="Age">
+
+                <label for="Height">Höjd (cm): </label>
+                <input type="number" name="Height" id="Height">
+
+                <p>Vilka tävlingar har han vunnit?</p>
+                <p></p>
+
+                <label for="WSM">Worlds strongest man:</label>
+                <input type="checkbox" name="WSM" id="WSM" value="WSM">
+
+                <label for="ASC">Arnold Strongman Classic</label>
+                <input type="checkbox" name="ASC" id="ASC" value="ASC">
+
+
+            </form>
         </main>
         <footer>
 
