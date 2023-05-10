@@ -136,6 +136,11 @@ table{
     grid-template-rows: auto auto;
     margin: 10px;
 }
+iframe{
+    height: 300px;
+    width: 400px;
+}
+
 
 
 /*Formstyling*/
