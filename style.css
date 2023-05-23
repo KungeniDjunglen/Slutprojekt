@@ -123,7 +123,7 @@ th, td{
 table{
     border-collapse:collapse;
 }
-.hurmain{ /*Finns så at jag kan styla hur.html sidan unikt*/
+#hurmain{ /*Finns så at jag kan styla hur.html sidan unikt*/
     margin-left: 12vw;
     margin-right:12vw;
     margin-bottom: 25px;
@@ -164,6 +164,23 @@ main > p{
 }
 
 
+/*Love focus hate*/
+a:link{
+    color:#ff0835;
+}
+a:hover{
+    color: pink;
+}
+a:visited{
+    color: purple;
+}
+a:focus{
+    color: yellow;
+}
+a:active{
+    color: orangered;
+}
+
 
 @media screen and (min-width:800px){
 
@@ -201,7 +218,7 @@ main > p{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 0;
-        margin: 5px
+        margin: 1em;
     }
 
 
