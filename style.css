@@ -168,14 +168,14 @@ main > p{
 a:link{
     color:#ff0835;
 }
-a:hover{
-    color: pink;
-}
 a:visited{
     color: purple;
 }
 a:focus{
     color: yellow;
+}
+a:hover{
+    color: pink;
 }
 a:active{
     color: orangered;
